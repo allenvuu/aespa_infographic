@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Open-sans';
+}
+
+body {
+    background: silver;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;   
+    width: auto;    
+    display: block;
+    transition: .3s;
+}
+
+#hamburger-nav {
+    display: none;       /* hide by default */
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 20px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
+
+.menu-links {
+    display: none;    /* hidden until clicked */
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.menu-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.social-media a:hover {
+    border-color: black
+}
+
+.social-media a i{
+    font-size: 24px;
+    color: black;
+    transform: rotate(-45deg);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+}
+
+.home-section{
+    background-color: none;
+    max-width: 1000px;
+}
+
+.home-section h1 {
+    font-size: 200px;
+    line-height: 1.2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: grey;
+    border: 2px solid;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s
+}
+
+.btn:hover {
+    background: transparent;
+    color: white;
+}
+
+.home-img {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 180px;
+}
+
+.home-img img{
+    width: 450px;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}

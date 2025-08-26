@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AESPA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="./assets/aespa-logo.png" alt="AESPA Logo">
+        </a>
+
+        <!-- Desktop nav -->
+    <nav id="desktop-nav" class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#members">members</a>
+        <a href="#music">music</a>
+    </nav>
+
+    <!-- Mobile nav (hidden by default) -->
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#members">members</a></li>
+            <li><a href="#music">music</a></li>
+        </ul>
+    </nav>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+
+    </header>
+
+    <section class="home">
+        <div class="home-section">
+            <h1>aespa</h1>
+            <a href="#" class="btn">discover music</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/aespa-m.png" alt="aespa">
+        </div>
+
+    </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const menu = document.querySelector('.menu-links');
+
+        hamburger.addEventListener('click', () => {
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+    </script>
+    
+</body>
+</html>
